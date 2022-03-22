@@ -5,7 +5,7 @@ const filterGroup = document.getElementById('filter-group');
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
-    hash: true,
+    hash: false,
     center: [77.6176, 12.9473],
     zoom: 11.15
 });
