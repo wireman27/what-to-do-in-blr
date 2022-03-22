@@ -3,6 +3,10 @@
 
 [Sindhu Shivaprasad](https://twitter.com/sindhusprasad)'s document on [what to do in Bangalore](https://sindhusprasad.notion.site/sindhusprasad/what-to-do-in-blr-f8c9d1386f524792aeefc6da62628bf9) is given some locational context in this tool. A side aim is also to create a growing dataset that anyone can contribute to. 
 
+## Data
+
+All data is available in the `data.json` file.
+
 ## Contributing
 
 Simply add a new feature to `features` in `data.json` and create a pull request. The different keys serve the following purposes:
