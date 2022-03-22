@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Filter symbols by toggling a list</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<link href="./styles.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id='welcome-message'>
+    <div id='welcome-message-content'>
+        <h4>
+            What is this?
+        </h4>
+        <p>
+            <a target="_blank" href='https://twitter.com/sindhusprasad'>Sindhu Shivaprasad</a> has curated a list of things to do in Bangalore
+            <a target="_blank" href='https://sindhusprasad.notion.site/sindhusprasad/what-to-do-in-blr-f8c9d1386f524792aeefc6da62628bf9'>here</a>.
+            This page displays those things on a map. 
+        </p>
+        <h4>How do I use this?</h3>
+        <p>
+            There are 98 points of interest. Zoom in and out of areas to reveal them. Click on individual features to
+            reveal their Google Maps URL.
+        </p>
+        <h4>
+            Can I download the data and/or contribute?
+        </h4>
+        <p>
+            Yes. Please see more information <a href="https://github.com/wireman27/what-to-do-in-blr">here</a>.
+        </p>
+        <i>
+            Click or tap anywhere outside this message to close it.
+        </i>
+    </div>
+</div>
+<div id="map"></div>
+
+<nav id="filter-group" class="filter-group"></nav>
+
+<script type='text/javascript' src='./script.js'> </script>
+</body>
+</html>

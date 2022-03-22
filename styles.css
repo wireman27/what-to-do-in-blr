@@ -1,0 +1,78 @@
+.filter-group {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 2%;
+    right: 10px;
+    z-index: 1;
+    border-radius: 3px;
+    width: 120px;
+    color: 'maroon';
+    overflow: auto;
+    height: 96%;
+
+    /* Change display settings below to enable or disable the navbar */
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    div#welcome-message {
+        width: 80%;
+        left: 10%;
+        height: 80%;
+        top: 10%;
+    }
+}
+
+div#welcome-message {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.75);;
+    color: black;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    height: 50%;
+    top: 25%;
+    overflow: auto;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+div#welcome-message div {
+    padding: 5%
+}
+
+.filter-group input[type='checkbox']:first-child + label {
+    border-radius: 3px 3px 0 0;
+}
+
+.filter-group label:last-child {
+    border-radius: 0 0 3px 3px;
+    border: none;
+}
+
+.filter-group input[type='checkbox'] {
+    display: none;
+}
+
+.filter-group input[type='checkbox'] + label {
+    background-color: #ffffff;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.filter-group input[type='checkbox'] + label {
+    background-color: #ffffff;
+    text-transform: capitalize;
+}
+
+.filter-group input[type='checkbox'] + label:hover, .filter-group input[type='checkbox']:checked + label {
+    background-color: #ffffff;
+}
+
+.filter-group input[type='checkbox']:checked + label:before {
+    content: '✔';
+    margin-right: 5px;
+}
